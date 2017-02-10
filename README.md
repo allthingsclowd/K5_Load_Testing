@@ -17,4 +17,15 @@ Once all servers are active the monitoring script terminates and the results are
 Both of these files are then uploaded to the K5 container object specified in the initial settings.
 
 ## Destroying Mode
-#
+# purge_projectv2.py
+This program will obliterate everything in your project...be warned!!!!
+Adjust the KeyPair and Security Group purge sections to meet your needs.
+This file imports the following to files:
+1. k5contractsettingsV10.py - the credentials and environmental settings need to be configured here
+2. k5APIwrappersV19.py - api library file 
+
+Note : Further debugging is required as often it requires 2 or 3 runs to purge the project completely - runs in parallel and can saturate some wifi routers!!!!
+
+# purge_project.py
+Sequential based purge script - very slow and reliable!!
+
